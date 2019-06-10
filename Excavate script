@@ -1,0 +1,10 @@
+#! /bin/bash 
+
+set -x #prints the last command ran/ helps troubleshoot 
+set -e #Shuts things down if the script fails  
+
+read filepath #give the script a filpath to act on
+cat $filepath | while read url #cat the file then pipe to a while loop
+do # do the thing 
+dig $num # runs dig on the variable read from the file 
+done # wraps up the script 
