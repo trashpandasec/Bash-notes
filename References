@@ -1,0 +1,9 @@
+
+command1 || command2 
+command2 is executed if, and only if, command1 returns a non-zero exit status. 
+In other words, run command1 successfully or run command2.
+
+
+command1 && command2
+command2 is executed if, and only if, command1 returns an exit status of zero (true).
+In other words, run command1 and if it is successfull, then run command2
